@@ -7,7 +7,7 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   float AI0_TP = analogRead(A0);
-  float transPressure = (AI0_TP/1023);
+  float transPressure = ((AI0_TP/1023.0)*300);
   Serial.println(transPressure);
   //Serial.println(AI0_TP);
   delay(1);
